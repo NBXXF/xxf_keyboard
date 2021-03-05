@@ -1,10 +1,10 @@
-package com.xxf.keyboard.wechat.component;
+package com.xxf.keyboard.emotion.component;
 
 import android.content.Context;
 import android.text.Spannable;
 import android.util.AttributeSet;
 
-import com.xxf.keyboard.wechat.emoji.EmojiSpanBuilder;
+import com.xxf.keyboard.emotion.EmojiSpanBuilder;
 
 /**
  * @Author: XGod  xuanyouwu@163.com  17611639080

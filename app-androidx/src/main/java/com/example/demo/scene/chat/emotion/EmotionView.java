@@ -14,8 +14,8 @@ import android.widget.ImageView;
 
 import com.effective.R;
 import com.example.demo.util.DisplayUtils;
-import com.xxf.keyboard.wechat.emoji.EmojiSpanBuilder;
-import com.xxf.keyboard.wechat.emoji.Emotion;
+import com.xxf.keyboard.emotion.EmojiSpanBuilder;
+import com.xxf.keyboard.emotion.Emotion;
 
 import java.util.ArrayList;
 import java.util.List;

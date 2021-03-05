@@ -12,7 +12,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.rd.PageIndicatorView;
-import com.xxf.keyboard.wechat.emoji.Emotion;
+import com.xxf.keyboard.emotion.Emotion;
 
 import java.util.ArrayList;
 import java.util.List;

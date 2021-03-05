@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.effective.databinding.VhChatRightLayoutBinding;
-import com.xxf.keyboard.wechat.emoji.EmojiSpanBuilder;
+import com.xxf.keyboard.emotion.EmojiSpanBuilder;
 
 /**
  * the right of chatting item

@@ -17,7 +17,7 @@ import com.effective.android.panel.view.panel.IPanelView;
 import com.effective.android.panel.view.panel.PanelView;
 import com.effective.android.panel.window.PanelDialog;
 import com.example.demo.scene.chat.emotion.EmotionPagerView;
-import com.xxf.keyboard.wechat.emoji.Emotions;
+import com.example.demo.scene.chat.emotion.Emotions;
 import com.example.demo.util.DisplayUtils;
 
 import org.jetbrains.annotations.NotNull;

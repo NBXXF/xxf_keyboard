@@ -1,4 +1,4 @@
-package com.xxf.keyboard.wechat.emoji;
+package com.xxf.keyboard.emotion;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;

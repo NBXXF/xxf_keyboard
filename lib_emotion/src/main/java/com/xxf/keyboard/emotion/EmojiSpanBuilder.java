@@ -1,18 +1,20 @@
-package com.xxf.keyboard.wechat.emoji;
+package com.xxf.keyboard.emotion;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.text.Editable;
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.TextUtils;
+import android.widget.EditText;
 
-import androidx.core.content.ContextCompat;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * Created by XXF on 18-7-11
- *
+ * <p>
  * blog: XXF.com
  */
 public class EmojiSpanBuilder {
@@ -38,16 +40,32 @@ public class EmojiSpanBuilder {
                 continue;
             }
             String key = matcherEmotion.group();
-            int imgRes = Emotions.getDrawableResByName(key);
-            if (imgRes != -1) {
+            IEmotion iEmotion = EmotionEngine.INSTANCE.getEmotion(key);
+            Drawable emotion = EmotionEngine.INSTANCE.getLoader().load(context, iEmotion);
+            if (emotion != null) {
                 int start = matcherEmotion.start();
-                Drawable drawable = ContextCompat.getDrawable(context, imgRes);
-                drawable.setBounds(0, 0, dip2px(context, 20f), dip2px(context, 20f));
-                CenterImageSpan span = new CenterImageSpan(drawable);
+                emotion.setBounds(0, 0, dip2px(context, 20f), dip2px(context, 20f));
+                CenterImageSpan span = new CenterImageSpan(emotion);
                 spannableString.setSpan(span, start, start + key.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             }
         }
 
         return spannableString;
+    }
+
+    /**
+     * 插入到当前焦点
+     *
+     * @param editText
+     * @param text
+     */
+    public static void insert(EditText editText, CharSequence text) {
+        if (editText == null || TextUtils.isEmpty(text)) {
+            return;
+        }
+        int start = editText.getSelectionStart();
+        Editable editable = editText.getEditableText();
+        Spannable emotionSpannable = EmojiSpanBuilder.buildEmotionSpannable(editText.getContext(), text);
+        editable.insert(start, emotionSpannable);
     }
 }

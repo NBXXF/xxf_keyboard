@@ -13,8 +13,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app-androidx" />
+            <option value="$PROJECT_DIR$/lib_emotion" />
             <option value="$PROJECT_DIR$/lib_panel" />
-            <option value="$PROJECT_DIR$/lib_wechat" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

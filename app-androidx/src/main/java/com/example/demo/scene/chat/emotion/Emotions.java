@@ -1,9 +1,12 @@
-package com.xxf.keyboard.wechat.emoji;
+package com.example.demo.scene.chat.emotion;
 
 import android.text.TextUtils;
 
 
-import com.xxf.keyboard.wechat.R;
+import com.effective.R;
+import com.xxf.keyboard.emotion.Emotion;
+import com.xxf.keyboard.emotion.IEmotion;
+
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -14,7 +17,7 @@ import java.util.Map;
 /**
  * 编码参考 http://www.oicqzone.com/tool/emoji/
  * Created by XXF on 18-7-11
- *
+ * <p>
  * blog: XXF.com
  */
 public class Emotions {
@@ -142,5 +145,15 @@ public class Emotions {
             emotions.add(new Emotion(entry.getKey(), entry.getValue()));
         }
         return emotions;
+    }
+
+    public static Map<String, IEmotion> getEmotionMap() {
+        Map<String, IEmotion> emotionMap = new LinkedHashMap<>();
+        Iterator<Map.Entry<String, Integer>> entries = EMOTIONS.entrySet().iterator();
+        while (entries.hasNext()) {
+            Map.Entry<String, Integer> entry = entries.next();
+            emotionMap.put(entry.getKey(), new Emotion(entry.getKey(), entry.getValue()));
+        }
+        return emotionMap;
     }
 }

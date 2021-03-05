@@ -28,7 +28,7 @@ import com.example.demo.anno.ChatPageType;
 import com.example.demo.scene.chat.adapter.ChatAdapter;
 import com.example.demo.scene.chat.adapter.ChatInfo;
 import com.example.demo.scene.chat.emotion.EmotionPagerView;
-import com.xxf.keyboard.wechat.emoji.Emotions;
+import com.example.demo.scene.chat.emotion.Emotions;
 import com.example.demo.systemui.StatusbarHelper;
 import com.example.demo.util.DisplayUtils;
 import com.rd.PageIndicatorView;

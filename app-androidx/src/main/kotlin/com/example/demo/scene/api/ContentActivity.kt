@@ -20,7 +20,7 @@ import com.example.demo.anno.ApiContentType
 import com.example.demo.scene.chat.adapter.ChatAdapter
 import com.example.demo.scene.chat.adapter.ChatInfo
 import com.example.demo.scene.chat.emotion.EmotionPagerView
-import com.xxf.keyboard.wechat.emoji.Emotions
+import com.example.demo.scene.chat.emotion.Emotions
 import com.example.demo.scene.chat.view.AutoHidePanelRecyclerView
 import com.example.demo.util.DisplayUtils
 import com.rd.PageIndicatorView

@@ -1,4 +1,4 @@
-package com.xxf.keyboard.wechat.component;
+package com.xxf.keyboard.emotion.component;
 
 import android.content.Context;
 import android.util.AttributeSet;

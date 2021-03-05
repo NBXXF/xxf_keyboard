@@ -1,5 +1,5 @@
 include ':lib_panel'
-include ':lib_wechat'
+include ':lib_emotion'
 include ':app-androidx'
 include ':app'
 rootProject.name = "xxf_keyboard"
