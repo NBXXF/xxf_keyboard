@@ -1,0 +1,5 @@
+include ':lib_panel'
+include ':lib_wechat'
+include ':app-androidx'
+include ':app'
+rootProject.name = "xxf_keyboard"
