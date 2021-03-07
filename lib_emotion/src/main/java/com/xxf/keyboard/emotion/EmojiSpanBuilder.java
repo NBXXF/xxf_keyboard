@@ -29,6 +29,9 @@ public class EmojiSpanBuilder {
 
 
     public static Spannable buildEmotionSpannable(Context context, CharSequence text) {
+        if (text == null) {
+            return new SpannableString("");
+        }
         Matcher matcherEmotion = sPatternEmotion.matcher(text);
         SpannableString spannableString = new SpannableString(text);
         while (matcherEmotion.find()) {
