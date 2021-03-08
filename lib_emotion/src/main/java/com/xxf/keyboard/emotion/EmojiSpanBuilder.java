@@ -44,6 +44,9 @@ public class EmojiSpanBuilder {
             }
             String key = matcherEmotion.group();
             IEmotion iEmotion = EmotionEngine.INSTANCE.getEmotion(key);
+            if (iEmotion == null) {
+                continue;
+            }
             Drawable emotion = EmotionEngine.INSTANCE.getLoader().load(context, iEmotion);
             if (emotion != null) {
                 int start = matcherEmotion.start();
