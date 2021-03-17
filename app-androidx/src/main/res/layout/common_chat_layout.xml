@@ -132,7 +132,7 @@
                         android:src="@drawable/icon_add" />
 
                     <!-- 输入入口 -->
-                    <EditText
+                    <com.xxf.keyboard.emotion.component.EmotionEditText
                         android:id="@+id/edit_text"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
